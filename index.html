@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reforma Tributária - Imposto Seletivo</title>
+    <link rel="stylesheet" href="styles.css">
+    <script>
+        function toggleInfo(sectionId) {
+            var section = document.getElementById(sectionId);
+            if (section.style.display === "none") {
+                section.style.display = "block";
+            } else {
+                section.style.display = "none";
+            }
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <h1>Reforma Tributária e o Imposto Seletivo (IS)</h1>
+    </header>
+    <main>
+        <button onclick="toggleInfo('info1')">O que é o Imposto Seletivo?</button>
+        <section id="info1" style="display:none;">
+            <h2>O que é o Imposto Seletivo?</h2>
+            <p>O Imposto Seletivo (IS) é um tributo proposto na Reforma Tributária que visa desestimular o consumo de produtos prejudiciais à saúde e ao meio ambiente.</p>
+        </section>
+        
+        <button onclick="toggleInfo('info2')">Objetivo do Imposto Seletivo</button>
+        <section id="info2" style="display:none;">
+            <h2>Objetivo do Imposto Seletivo</h2>
+            <p>O principal objetivo do IS é desincentivar a produção e o consumo de bens considerados nocivos, como cigarros, bebidas alcoólicas e combustíveis fósseis.</p>
+        </section>
+        
+        <button onclick="toggleInfo('info3')">Impactos da Reforma Tributária</button>
+        <section id="info3" style="display:none;">
+            <h2>Impactos da Reforma Tributária</h2>
+            <p>Com a implementação do Imposto Seletivo, espera-se uma redução no consumo de produtos prejudiciais e um aumento da arrecadação para políticas públicas.</p>
+        </section>
+    </main>
+</body>
+</html>
